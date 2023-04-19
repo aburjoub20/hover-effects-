@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.title {
+    position: absolute;
+    top: 70px;
+    align-items: center;
+    font-size: 40px;
+    background-image: linear-gradient(transparent 0%,transparent 0%,  hotpink 90%,hotpink 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+.title:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.gallary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+    gap: 50px;
+    padding-top: 200px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    aspect-ratio: 3/2;
+    border: 2px solid orange;
+
+}
+.image {
+    width: 300px;
+    aspect-ratio: 3/2;
+    transition: transform .25s;
+}
+
+.card:hover .image{
+    transform: scale(1.3);
+}
